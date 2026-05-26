@@ -11,7 +11,7 @@ from flask_cors import CORS
 
 from .config import Config
 from .database.connection import init_pool
-from .api.notes import notes_bp
+from .notes import notes_bp
 
 
 def create_app() -> Flask:

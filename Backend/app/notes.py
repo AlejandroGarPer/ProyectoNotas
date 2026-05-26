@@ -3,7 +3,7 @@ Endpoints REST para el recurso /notes.
 Cada ruta delega la lógica al servicio correspondiente.
 """
 from flask import Blueprint, request, jsonify
-from ..services import notes_service
+from .services import notes_service
 
 notes_bp = Blueprint("notes", __name__, url_prefix="/notes")
 
